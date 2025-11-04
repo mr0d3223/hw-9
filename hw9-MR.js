@@ -357,9 +357,6 @@ Crucially, precede this injection code with a multi-line comment explaining the 
   In that situation, calls that rely on document.body or elements inside
   the body may fail because document.body is still null.
 
-  A common error that occurs in this scenario is:
-    "Cannot set property 'innerHTML' of null"
-
   This happens when code tries something like:
     document.body.innerHTML = "...";
   but `document.body` doesn't exist yet.
